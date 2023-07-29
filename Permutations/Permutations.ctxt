@@ -1,0 +1,29 @@
+#BlueJ class context
+comment0.target=Permutations
+comment0.text=\ \n\ \ Compute\ all\ permutations\ of\ a\ list\ of\ Strings\n\n\ \ You\ only\ have\ to\ write\ one\ method\ -\ the\ extendPermutations(...)\ method\n\ \ which\ does\ the\ recursive\ search.\ \ \n
+comment1.params=items
+comment1.target=java.util.List\ findPermutations(java.util.Set)
+comment1.text=\n\ Constructs\ a\ list\ of\ all\ permutations\ of\ the\ given\ items\n\ by\ calling\ a\ recursive\ method,\ passing\ in\ a\ set\ of\ the\ items\ to\ permute\n\ and\ an\ empty\ list\ to\ build\ up.\n\ Prints\ the\ total\ number\ of\ permutations\ in\ the\ message\ window\ (with\n\ \ UI.printMessage(...);\n
+comment2.params=items\ left\ right
+comment2.target=void\ permute(java.util.List,\ int,\ int)
+comment2.text=\n\ A\ recursive\ function\n\ Iterates\ throught\ the\ list\ of\ items,\ swaping\ them\ until\ all\ permutations\ of\n\ the\ string\ have\ been\ printed.\ \n
+comment3.params=remainingItems\ permutationSoFar\ allPermutations
+comment3.target=void\ extendPermutation(java.util.Set,\ java.util.Stack,\ java.util.List)
+comment3.text=\n\ Recursive\ method\ to\ build\ all\ permutations\ possible\ by\ adding\ the\n\ \ remaining\ items\ on\ to\ the\ end\ of\ the\ permutation\ built\ up\ so\ far\ \n\ If\ there\ are\ no\ remaining\ items,\ then\ permutationSoFar\ is\ complete,\n\ \ \ \=>\ add\ a\ copy\ of\ the\ permutation\ to\ allPermutations.\n\ Otherwise,\n\ \ for\ each\ of\ the\ remaining\ items,\n\ \ \ \ \ extend\ the\ permutationSoFar\ with\ the\ item,\ and\ do\ a\ recursive\ call\ to\ extend\ it\ more\:\n\ \ \ \ \ -\ remove\ the\ item\ from\ remaining\ items\ and\n\ \ \ \ \ -\ push\ it\ onto\ the\ permutation\ so\ far,\n\ \ \ \ \ -\ do\ the\ recursive\ call,\n\ \ \ \ \ -\ pop\ the\ item\ from\ the\ permutation\ so\ far\ and\n\ \ \ \ \ -\ put\ it\ back\ into\ the\ remaining\ items.\n\n\ So\ that\ you\ don't\ run\ out\ of\ memory,\ only\ add\ the\ first\ 10000\ permutations\ to\ the\ allPermutations.\n
+comment4.params=
+comment4.target=void\ setupGUI()
+comment4.text=\n\ Setup\ GUI\n\ Buttons\ to\ run\ permutations\ on\ either\ letters\ or\ words\n
+comment5.params=permutations
+comment5.target=void\ printAll(java.util.List)
+comment6.params=str
+comment6.target=java.util.Set\ makeSetOfLetters(java.lang.String)
+comment6.text=\n\ Makes\ a\ set\ of\ strings,\ one\ string\ for\ each\ character\ in\ the\ argument\n
+comment7.params=str
+comment7.target=java.util.Set\ makeSetOfWords(java.lang.String)
+comment7.text=\n\ Makes\ a\ set\ of\ strings,\ one\ string\ for\ each\ word\ in\ the\ argument\n
+comment8.params=
+comment8.target=void\ reportCounter()
+comment8.text=Report\ the\ value\ of\ counter\ in\ the\ message\ area
+comment9.params=arguments
+comment9.target=void\ main(java.lang.String[])
+numComments=10

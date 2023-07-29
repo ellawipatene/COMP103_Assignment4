@@ -1,0 +1,12 @@
+Question: Order is important
+Question: Access is restricted
+Question: FIFO (vs LIFO)
+Answer: Queue
+Answer: Stack
+Answer: List
+Question: Access is by key
+Answer: Map
+Question: Duplicates are OK
+Answer: Bag (Collection)
+Answer: Set
+
